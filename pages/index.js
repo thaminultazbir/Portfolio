@@ -19,13 +19,23 @@ const Home = () => {
           <span className='text-accent'>Digital Reality</span>
         </h1>
         {/*Subtitle*/}
-        <p className=' max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+        <motion.p variants={fadeIn('down', 0.3)}
+                    initial="hidden" 
+                    animate="show" 
+                    exit="hidden" 
+                    className=' max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </motion.p>
         {/*BTN*/}
         <div className=' flex justify-center xl:hidden relative'>
           <ProjectBtn />
         </div>
+        <motion.div variants={fadeIn('down', 0.4)}
+                    initial="hidden" animate="show" exit="hidden"
+                    className='hidden xl:flex'>
+          <ProjectBtn />
+        </motion.div>
       </div>
     </div>
     {/*Image*/}

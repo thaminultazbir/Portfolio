@@ -13,7 +13,7 @@ import Header from '../components/Header';
 import TopLeftImg from '../components/TopLeftImg'
 const Layout = ({children}) => {
   return (
-  <div className={`page bg-site text-white  ${sora.variable} font-sora relative`}>
+  <div className={`page bg-site bg-cover bg-no-repeat text-white  ${sora.variable} font-sora relative`}>
     <TopLeftImg/>
     <Nav />
     <Header/>
