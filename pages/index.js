@@ -19,7 +19,7 @@ const Home = () => {
           <span className='text-accent'>Digital Reality</span>
         </h1>
         {/*Subtitle*/}
-        <motion.p variants={fadeIn('down', 0.3)}
+        <motion.p variants={fadeIn('down', 0.3)} 
                     initial="hidden" 
                     animate="show" 
                     exit="hidden" 
